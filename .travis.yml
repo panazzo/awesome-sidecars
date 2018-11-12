@@ -1,0 +1,15 @@
+sudo: required
+
+language: minimal
+
+services:
+  - docker
+
+before_install:
+  - docker build -t panazzo/s3-side-sync .
+
+deploy:
+  provider: script
+  script: bash ci/docker_push
+  on:
+    branch: master
