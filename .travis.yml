@@ -10,6 +10,6 @@ install:
 
 deploy:
   provider: script
-  script: - make push -C ci/
+  script: make push -C ci/
   on:
     branch: master
