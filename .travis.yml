@@ -1,0 +1,15 @@
+sudo: required
+
+language: minimal
+
+services:
+  - docker
+
+install:
+  - make build -C ci/ 
+
+deploy:
+  provider: script
+  script: - make push -C ci/
+  on:
+    branch: master
