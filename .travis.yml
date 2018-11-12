@@ -6,10 +6,10 @@ services:
   - docker
 
 install:
-  - docker build -t panazzo/s3-side-sync .
+  - make build -C ci/ 
 
 script:
-  - bash ci/docker_push
+    - make push -C ci/
 #deploy:
 #  provider: script
 #  script: bash ci/docker_push
