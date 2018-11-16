@@ -1,2 +1,2 @@
 syslog-ng
-/root/goofys -f --region $REGION --stat-cache-ttl $STAT_CACHE_TTL --type-cache-ttl $TYPE_CACHE_TTL --dir-mode $DIR_MODE --file-mode $FILE_MODE $BUCKET $MOUNT_DIR
+/root/goofys -f --region $REGION --stat-cache-ttl 1m0s --type-cache-ttl 1m0s --dir-mode 0500 --file-mode 0500 $BUCKET $MOUNT_DIR
