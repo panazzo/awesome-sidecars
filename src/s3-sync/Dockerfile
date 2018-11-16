@@ -14,7 +14,6 @@ VOLUME ["/data"]
 
 ENV MOUNT_DIR /data
 ENV REGION us-east-1
-ENV BUCKET test-panazzo-bucket-sync
 ENV STAT_CACHE_TTL 1m0s
 ENV TYPE_CACHE_TTL 1m0s
 ENV DIR_MODE 0500
